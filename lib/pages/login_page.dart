@@ -1,10 +1,9 @@
-import 'dart:math';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:login_page/components/auth_button.dart';
 import 'package:login_page/components/input_field.dart';
 import 'package:login_page/components/square_tile.dart';
+import 'package:login_page/services/auth_service.dart';
 
 class LoginPage extends StatefulWidget {
   final Function()? onTap;
@@ -140,10 +139,19 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 35),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
-                    SquareTile(imagePath: 'assets/images/google.png'),
-                    SizedBox(width: 10),
-                    SquareTile(imagePath: 'assets/images/apple.png'),
+                  children: [
+                    SquareTile(
+                      imagePath: 'assets/images/google.png',
+                      onTap: () {
+                        AuthService().signInWithGoogle();
+                        print('clicou');
+                      },
+                    ),
+                    const SizedBox(width: 10),
+                    SquareTile(
+                      imagePath: 'assets/images/apple.png',
+                      onTap: () {},
+                    ),
                   ],
                 ),
                 const SizedBox(height: 35),

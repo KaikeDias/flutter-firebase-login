@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "757110751567",
+    "project_id": "authtutorial-f52cd",
+    "storage_bucket": "authtutorial-f52cd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757110751567:android:fefaceaf7e55011433c53a",
+        "android_client_info": {
+          "package_name": "com.example.login_page"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757110751567-reh9p32bgto6grah2g0k8tddf48j6svm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdGIb5YT8SPZmzJuaZEIhQ0piayr5Q_lc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757110751567-reh9p32bgto6grah2g0k8tddf48j6svm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
